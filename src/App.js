@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
+function clickButton() {
+  return window.alert('This is a test app!')
+}
+
 function App() {
-  return (
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>
+        Serene Sea Front
+      </h1>
+      <img 
+        width="800px"
+        alt="random image" 
+        src="https://machinelearningmastery.com/wp-content/uploads/2018/07/How-to-Generate-Random-Numbers-in-Python.jpg" />
+      <p>
+        Relax! breathe in and breathe out, feel the wind through you. 
+      </p>
+      <button onClick={clickButton}>Click for info</button>
+      <br />
+      <p></p>
     </div>
   );
 }
