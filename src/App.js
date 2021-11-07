@@ -16,7 +16,7 @@ function App() {
   const fetchData = async (city) => {
     try{
     const APIKEY = '02ff729d3a221b48e9dbed52ca68642c'
-    const result = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${'chennai'}&appid=${APIKEY}&units=metric`);
+    const result = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${'new york'}&appid=${APIKEY}&units=metric`);
     await setAllData({
       city: result.data.name,
       country: result.data.sys.country,
